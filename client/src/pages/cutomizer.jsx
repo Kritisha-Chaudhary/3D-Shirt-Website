@@ -56,7 +56,7 @@ const Customizer = () => {
       console.log("🚀 Sending prompt to API:", prompt);
       setGeneratingImg(true);
   
-      const response = await fetch("https://threed-shirt-website-ai.onrender.com", {
+      const response = await fetch("https://threed-shirt-website-ai.onrender.com/api/v1/dalle", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
